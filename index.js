@@ -61,10 +61,8 @@ const record = [
 ]
 function superbowlWin(superbowlResults) {
     for (const result of superbowlResults) {
-        const winningYear = superbowlResults.find(result => result.result === "W");
-        if (winningYear) {
-            return winningYear.year;
-        }
+        if(result.result === "W")
+        return result.year
     }
-    return undefined;
+        return undefined;
 }
